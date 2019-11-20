@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>Actions-user-group-new-icon.png</file>
+    <file>Actions-user-group-delete-icon.png</file>
+    <file>User-icon.png</file>
+    <file>Person-Male-Light-icon.png</file>
+    <file>Button-Add-icon.png</file>
+    <file>Button-Close-icon.png</file>
+    <file>file-import-icon.png</file>
+    <file>file-export-icon.png</file>
+    <file>USB-Flash-Card-With-Card-Reader-icon.png</file>
+  </qresource>
+</RCC>

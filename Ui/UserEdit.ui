@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Список пользователей</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>581</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTableView" name="tvUsersList"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionUserAdd"/>
+   <addaction name="actionUserDelete"/>
+  </widget>
+  <action name="actionUserAdd">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/Actions-user-group-new-icon.png</normaloff>:/newPrefix/Actions-user-group-new-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>UserAdd</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить пользователя</string>
+   </property>
+  </action>
+  <action name="actionUserDelete">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/newPrefix/Actions-user-group-delete-icon.png</normaloff>:/newPrefix/Actions-user-group-delete-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>UserDelete</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить пользователя</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>
